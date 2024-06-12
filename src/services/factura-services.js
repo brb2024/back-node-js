@@ -1,6 +1,6 @@
 const conexion = require('../config/bd-config');
 
-exports.obtenerPersonas = (req, res) => {
+exports.obtenerFacturas = (req, res) => {
   const query = "SELECT * FROM factura";
 
   conexion.query(query, (error, result) => {
@@ -10,5 +10,4 @@ exports.obtenerPersonas = (req, res) => {
       res.json(result);
     }
   });
-
 };

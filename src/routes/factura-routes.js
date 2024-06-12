@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const consultas = require('../services/factura-services');
+const servicios = require('../services/factura-services');
 
 // Obtener facturas
-router.get('/facturas',  consultas.obtenerPersonas);
+router.get('/facturas',  servicios.obtenerFacturas);
 
 module.exports = router;

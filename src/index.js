@@ -15,6 +15,7 @@ app.use(cors());
 
 // Rutas
 app.use(require('./routes/factura-routes'));
+app.use(require("./routes/detalles-factura-routes"));
 
 // Iniciar servidor
 app.listen(app.get('puerto'), () => {
